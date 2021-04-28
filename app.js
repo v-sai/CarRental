@@ -17,8 +17,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
   
-const URI =
-  "mongodb+srv://saiv5350:r161528sai@cluster0.mzusz.mongodb.net/<dbname>?retryWrites=true&w=majority";
+const URI = MONGO_URI;
 // const URI = "mongodb://localhost:27017/TravelAgency";
 mongoose
   .connect(URI, {
